@@ -8,7 +8,7 @@ library Signatures{
         public 
         pure 
         returns(bytes32 message) 
-    }
+    {
         message = keccak256(abi.encodePacked(recipient, amount));
     }
 
